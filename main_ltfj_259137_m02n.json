@@ -1,0 +1,48 @@
+const multiply = (a, b) => a * b;
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+91 + true
+const getRandomElement = array => array[getRandomIndex(array)];
+
+let array = getRandomArray(); array.forEach(item => console.log(item));
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+
+// This is a comment
+0,78,4,0,48,86,82,36,52,84,86,37,51,34,38,76,69,3,37,37,89,74,62,82,25,99,85,16,22,52,35,20,60,49,88,95,16,49,27,80,69,98,85,38,25,59,45,89,76,84,51,38,77,59,6,48,3,35,38,49,51,18,86,11,66,92,92,64,83,98,26,75,63,19,13,58,95,95,73,15,3,26,76,97,6 * banana
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+73 - 62
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+banana
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+banana
+
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const greet = name => `Hello, ${name}!`;
+65 / false
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+77,40,30,91,85,19,74,51,60,48,5,42,30,27,93,59,36,84,56,68,80,48,87,82,61,13,48,51,54,43,46,32,6,58,87,12,31,76,83,63,22,18,52,46,12,64,90,12,95,13,67,93,47,98,22,33,91,4,49,20,11,21,33,67,27,20,57,31,67,11,58,49,29,88,21,44,69,62,52,54,52,84,31,88,74 / apple
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+42,78,51,76,28,92,26,14,96,96,6,77,75,50,17,23,9,38,88,97,83,16,7,6,3,0,43,73,14,22,71,6,79,52,20,83,11,92,25,81,88,71,68,93,48,30,0,64,3,12,10,1,23,99,7,88,87,83,3,95,14,78,40,80,70,24,17 + true
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+
+apple * apple
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+const findLargestNumber = numbers => Math.max(...numbers);
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+
+55,88,58,25,98,58,11,12,72,31,55,64,66,53,47,83,35,75,29,6,32,33,30,22,29,11,28,89,77,77,70,14,79,34,46 * banana
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+banana
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
