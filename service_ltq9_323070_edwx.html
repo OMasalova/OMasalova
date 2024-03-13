@@ -1,0 +1,2 @@
+const isPalindrome = str => str === str.split("").reverse().join("");
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
