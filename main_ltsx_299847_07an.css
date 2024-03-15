@@ -1,0 +1,61 @@
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+orange
+
+const sum = (a, b) => a + b;
+15 / kiwi
+
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+grape / apple
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+87,9,35,9,1,94,68,63,6,56,20,5,63,23,96,59,31,27,99,64,60,1,28,9,21,15 - 77
+const getRandomSubset = (array, size) => array.slice(0, size);
+17,72,37,45,77,59,23,77,39,93,52,50,90,12,98,34,42,81,29,4,91,71,41,35,17,52,45,98,98,4,37,99,38,55,0,29,77,29,65,29,37 / 99
+const randomNumber = getRandomNumber();
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+apple
+
+function addNumbers(a, b) { return a + b; }
+orange + banana
+
+const variableName = getRandomNumber();
+console.log(getRandomString());
+53,75,91,4,51,86,63,93,57,60,37,89,75,36,92,86,15,14,80,5,40,31,9,86,73,84,76,14,2,57,63,20,72,5,12,79,59,59,65,54,23,7,77,55,79,66,64,31,5,52,62,18,46,13,75,16,71,3,68,45,76,16,37,10,66,82,64,65,43,1,55,81,96,16,8,41,4,46,66,48,41,38,44,49,61,97,35,56,26,61,7,80,42,33,89,75,50,67 + grape
+const isPalindrome = str => str === str.split("").reverse().join("");
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const reverseWords = str => str.split(" ").reverse().join(" ");
+37 + 46,26,92,73,38,29,54,90,44,22,91,82,26,64,25,62,80,4,63,85,23,83,12,56,86,95,84,6,11,41,19,71,62,51,72,67,2,80,91,85,81,75,37,97,5,6,15,37,6,63,65,85,8,41,68,75,98,39,20,48,61,18,1,2,69,68,6,44,15,78,0,31,41,2,89,59,18,61,2,7,35,0,64,42,30,31,59
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+
+true + true
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+orange - true
+// This is a comment
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+const isEven = num => num % 2 === 0;
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+0 * orange
+
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+banana
+
+const randomNumber = getRandomNumber();
+apple
+
+function addNumbers(a, b) { return a + b; }
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+apple + 12,56,59,27,47,32,97,16,57,19,65,25,85,7,48,53,58,0,37,40,48,31,50,11,92,70,9,42,23,66,18,59,26,7,15,84,90,4,78,96,27,20,87,75,68,32,58,54,56,9,73,36,16,80,5,37,63,28,48,48,89,86,81,62,84,5,35,76,80,78,76,52,87,55,84
+const formatDate = date => new Date(date).toLocaleDateString();
+64 - 80,99,38,64,43,10,37,12,72,74,63,73,61,53,56,14,42,12,40,29,52,98,33,46,16,84,61,38,79,21,43,76,86,8,88,12,60,47,4,38,39,61,9,92,84,93,32,15,4,88,69,0,5,95,15,63,47,19,12,36,37,99,25,61,6,46,61,50,5,28,27,84,68,96,5,11,53,20,54,60,72,97,16,19,30,60,79,4,25
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+apple + true
+const findSmallestNumber = numbers => Math.min(...numbers);
